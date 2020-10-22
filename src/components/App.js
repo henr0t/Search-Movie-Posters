@@ -16,6 +16,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="ui container" style={{ marginTop: "10px" }}>
+        <h3 class="ui block header">A Movie Poster Database</h3>
         <SearchBar onSubmit={this.onSearchSubmit} />
         <ImageList posters={this.state.movies} />
       </div>
