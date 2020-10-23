@@ -1,6 +1,4 @@
 .image-list {
-  align-content: center;
-
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 0 10px;
@@ -9,10 +7,15 @@
 
 .image-list img {
   width: 100%;
-  height: auto;
+
   grid-row-end: span 2;
   animation: fadeIn 1s;
   border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.image-list img:hover {
+  transform: scale(1.04);
 }
 
 @media (max-width: 1200px) {
